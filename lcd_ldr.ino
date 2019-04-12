@@ -7,8 +7,7 @@ int hitung = 0;
 int nilai;
 unsigned long time;
 void setup() {
-  // put your setup code here, to run once:
-  
+
   Serial.begin(9600);
   lcd.begin(16, 2);
   lcd.clear();
@@ -17,9 +16,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   nilai = analogRead(ldr);
-  //int nilaiLed = map (nilai,0,1023,255,0);
   if(nilai < 390){
     hitung=hitung+1;
     time=millis();
@@ -41,6 +38,5 @@ void loop() {
     Serial.end();
   }
   
-  //analogWrite(ledPin,nilaiLed);
   delay (150);
 }
