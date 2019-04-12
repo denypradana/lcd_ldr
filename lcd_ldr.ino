@@ -12,10 +12,6 @@ void setup() {
   Serial.begin(9600);
   lcd.begin(16, 2);
   lcd.clear();
-  lcd.setCursor(6, 0);
-  lcd.print("NAMA");
-  lcd.setCursor(2, 1);
-  lcd.print("DENY PRADANA");
   pinMode(pinRelay, OUTPUT);
   digitalWrite(pinRelay, HIGH);
 }
