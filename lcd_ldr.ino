@@ -1,6 +1,6 @@
-#include <LiquidCrystal.h>
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-LiquidCrystal lcd(6, 7, 9, 10, 11, 12);
 byte ldr = A0;
 int pinRelay=2;
 int hitung = 0;
